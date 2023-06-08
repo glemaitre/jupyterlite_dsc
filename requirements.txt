@@ -44,3 +44,10 @@ ipyleaflet
 # Python: plotting libraries (optional)
 plotly>=5,<6
 bqplot
+
+# Pacakages for the datascience starter course
+scikit-learn
+pandas
+seaborn
+geopandas
+descartes
