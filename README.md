@@ -1,29 +1,57 @@
-# JupyterLite Demo
+# Datascience starter course
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://glemaitre.github.io/jupyterlite_dsc/)
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+## Curriculum
 
-## ✨ Try it in your browser ✨
+This lecture is focused on the following concepts:
 
-➡️ **https://jupyterlite.github.io/demo**
+1. Introduction the Python programming language;
+2. Data wrangling using Pandas;
+3. Applied mathematics using NumPy;
+4. Understand linear models;
+5. Understand tree-based algorithms;
+6. Evaluate a machine-learning model;
+7. Manage mixed data types in machine-learning pipeline;
+8. Fine tuning model by hyper-parameters search.
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+## Additional material:
 
-## Requirements
+Some intro slides: http://ogrisel.github.io/decks/2017_intro_sklearn
 
-JupyterLite is being tested against modern web browsers:
+## Getting started
 
-- Firefox 90+
-- Chromium 89+
+In case that you have any issues, you click on the binder link below
+which will setup an online machine for you:
 
-## Deploy your JupyterLite website on GitHub Pages
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/glemaitre/datascience_started_course/master)
+[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://glemaitre.github.io/jupyterlite_dsc/)
 
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
+Alternatively you can create a new conda environment which will be called
+`dsc` by default and whill contain all the packages required to run the
+notebooks:
 
-## Further Information and Updates
+``` bash
+conda env create -f environment.yml
+```
 
-For more info, keep an eye on the JupyterLite documentation:
+```bash
+conda activate dsc
+cd path/to/datascience_started_course
+jupyter notebook
+```
 
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
+You can also update an existing `conda` environment:
+
+
+``` bash
+conda env update -f environment.yml
+```
+
+## References
+
+This material is inspired and reused part of the following materials:
+
+* https://github.com/amueller/scipy-2018-sklearn
+* https://github.com/lesteve/euroscipy-2019-scikit-learn-tutorial
+* https://github.com/INRIA/scikit-learn-mooc
